@@ -1,0 +1,85 @@
+/* rafting.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.hero article img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.history p {
+    margin-top: 20px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 32px;
+    height: 32px;
+}

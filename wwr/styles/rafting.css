@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Angkor&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --primary-color: #3587A4;
-    --secondary-color: #2D848A;
-    --accent1-color: #88CCF1;
-    --accent2-color: #C1DFF0;
+    --primary-color:#333333;
+    --secondary-color:#D5CCC7;
+    --accent1-color:#A9A29C;
+    --accent2-color: #28262B;
 
     --heading-font: 'Angkor', serif;
     --paragraph-font: 'Anek Devanagari', serif;
