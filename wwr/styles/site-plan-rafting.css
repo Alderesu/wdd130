@@ -69,6 +69,6 @@ footer {
     width: 100%;
     height: auto;
 }
-h1, article {
+article {
     position: absolute;
 }
