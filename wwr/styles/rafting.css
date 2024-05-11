@@ -155,6 +155,7 @@ footer {
   }
   
   section {
+    margin: 40px;
     padding: 20px;
     text-align: center;
   }
@@ -180,14 +181,14 @@ footer {
   }
 
   #adventure {
-    margin-top: -30px;
+    margin-top: -0px;
   }
 
   .picture-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-
+    margin-bottom: 100px;
   }
   
   .picture-container img {
@@ -195,6 +196,12 @@ footer {
     height: auto;
     object-fit: cover;
     order: -1;
+  }
+
+  figcaption {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--accent2-color); 
   }
 
   
