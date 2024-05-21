@@ -3,17 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Practice of Kyle</title>
+    <title>Document</title>
+    <style>
+        body {
+  /* Center the form on the page */
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 90px;
+
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+input[type="radio"] {
+ margin: auto;
+}
+
+    </style>
 </head>
 <body>
-    <h1>A Picture of the Cutest Guy in the Planet</h1>
-    <img src="images/profile.jpg" alt="Super duper hot guy with glasses" width="300">
-    <p> These are the types of apple: </p>
-    <ul>
-        <li>mapple</li>
-        <li>banapple</li>
-    </ul>
-    <p>Try to open <strong>one</strong> <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a></p>
+    <!--basic-->
+    <form action="/my-handling-form-page" method="post" class="one">
+        <ul>
+          <li>
+            <label for="name">
+                Name:<input type="text" id="name" name="user_name" />
+            </label>
+          </li>
+          <li>
+            <label for="mail">
+                Email: <input type="email" id="mail" name="user_email" />
+            </label>
+            
+          </li>
+          <li>
+            <label for="msg">
+                Message: <textarea id="msg" name="user_message"></textarea>
+            </label>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+    <!--fieldset-->
+      <form class="two">
+        <fieldset>
+          <legend>Fruit juice size</legend>
+          <p>
+            <input type="radio" name="size" id="size_1" value="small" />
+            <label for="size_1">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_2" value="medium" />
+            <label for="size_2">Medium</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_3" value="large" />
+            <label for="size_3">Large</label>
+          </p>
+        </fieldset>
+      </form>
+      <!--clickable labels-->
+      <form class="three">
+        <p>
+          <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" />
+          <label for="taste_1">I like cherry</label>
+        </p>
+        <p>
+          <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
+          <label for="taste_2">I like banana</label>
+        </p>
+      </form>
+      <!--multiple labels-->
+      <form>
+        <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+        <div>
+            <label for="username">Name: <span aria-label="required">*</span></label>
+            <input id="username" type="text" name="username" required />
+          </div>
+      </form>
+    <!--try-->
+    <form>
+        <h1>Payment Form</h1>
+        <p>
+            Required fields are followed by
+            <strong><span aria-label="required">*</span></strong>
+        </p>
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+              <legend>Title</legend>
+              <ul>
+                <li>
+                  <label for="title_1">
+                    <input type="radio" id="title_1" name="title" value="A" />
+                    Ace
+                  </label>
+                </li>
+                <li>
+                  <label for="title_2">
+                    <input type="radio" id="title_2" name="title" value="K" />
+                    King
+                  </label>
+                </li>
+                <li>
+                  <label for="title_3">
+                    <input type="radio" id="title_3" name="title" value="Q" />
+                    Queen
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Name: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="text" id="name" name="username" required />
+            </p>
+            <p>
+              <label for="mail">
+                <span>Email: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="email" id="mail" name="usermail" required />
+            </p>
+            <p>
+              <label for="pwd">
+                <span>Password: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="password" id="pwd" name="password" required />
+            </p>
+          </section>
+          
+    </form>
+
+      
       
 </body>
 </html>
