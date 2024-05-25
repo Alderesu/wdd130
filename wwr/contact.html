@@ -22,54 +22,66 @@
     <main>
         <div class="header">
             <h1>Reach Our Team</h1>
-            <p>We love questions and feedback - and we're always happy to help!</p>
+            <p>We love questions and feedback - and we're always happy to help! <br> Here are some ways to reach us! </p>
         </div>
 
         <div class="contact">
-            <h2>Contact Information</h2>
-            <p>Boston, United States</p>
-            <p>177 Huntington Ave Ste 1703</p>
-            <p>Email: <a href="mailto:contact-us@company.com">contact-us@company.com</a></p>
-            <p>Phone: +1-617-555-0108</p>
+            <h2>Metro Manila, Philippines</h2>
+            <ul>
+                <li> 📍 118 Stotsenburg Ave. 1400</li>
+                <li> 📧 info@whitewaterrafting.net</li>
+                <li> ☎️ +1 800-111-2222</li>
+            </ul>
         </div>
 
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61785.29381071941!2d121.0277456!3d14.565944900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1778673307%3A0x14974a3dd95fe625!2sPasig%20River!5e0!3m2!1sen!2sph!4v1716265215726!5m2!1sen!2sph" width="272" height="160" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61785.29381071941!2d121.0277456!3d14.565944900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1778673307%3A0x14974a3dd95fe625!2sPasig%20River!5e0!3m2!1sen!2sph!4v1716265215726!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="customers">
-            <img src="images/customer1.jpg" alt="Happy Client 1">
-            <img src="images/customer2.jpg" alt="Happy Client 2">
-            <img src="images/customer3.jpg" alt="Happy Client 3">
+            <figure class="image1">
+                <img src="images/staff-Leah.webp" alt="Raft Guide Leah">
+                <figcaption>Leah | Raft Guide</figcaption>
+            </figure>
+           <figure class="image2">
+                <img src="images/Staff-Alfredo-1.webp" alt="Raft Guide Alfredo">
+                <figcaption>Alfredo | Raft Guide</figcaption>
+           </figure>
+            <figure class="image3">
+                <img src="images/Staff-Ricky2.webp" alt="Raft Guide Ricky">
+                <figcaption>Ricky | Raft Guide</figcaption>
+            </figure>
+            
         </div>
-        
-
+    
         <div class="form">
             <form>
                 <fieldset>
-                    <legend>Send Us a Message</legend>
-                    <div>
-                        <label for="name">Your name:</label>
-                        <input type="text" id="name" name="name">
+                    <legend><h2>Send Us a Message</h2></legend>
+                    <p>Send us a message and we'll respond within 24hrs!</p>
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    
                     </div>
-                    <div>
-                        <label for="email">Your email address:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div>
+                    <div class="radio">
+                        <p>What can we help you with?</p>
+                         <input type="radio" id="General" name="general_inquiry" value="General">
+                         <label for="General">General Inquiry</label>
+                         <input type="radio" id="Reservation" name="reservation_question" value="Reservation">
+                         <label for="Reservation">Reservation Question</label>
+                         <input type="radio" id="Suggestion" name="website_suggestion" value="Suggestion">
+                         <label for="Suggestion">Website Suggestion</label>
+                     </div>
+                    <div class="message">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message"></textarea>
-                    </div>
-                    </div>
-                    <div>
-                       <p>What can we help you with?</p>
-                        <input type="radio" id="General" name="general_inquiry" value="General">
-                        <label for="General">General Inquiry</label>
-                       
-                        <input type="radio" id="Reservation" name="reservation_question" value="Reservation">
-                        <label for="Reservation">Reservation Question</label>
-                        <input type="radio" id="Suggestion" name="website_suggestion" value="Suggestion">
-                        <label for="Suggestion">Website Suggestion</label>
                     </div>
                     <div>
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label>
@@ -77,17 +89,9 @@
                     </div>
                 </fieldset>
                 <button type="submit" id="send">Send</button><br>
-                <button id="clearButton">clear button</button>
             </form>
         </div>
     </main>
-
-
-
-
-
-
-
 
     <footer>
         <p> ©️ 2024 White Water Rafting Co. <br> Kyle Aldrich Moran. </p>

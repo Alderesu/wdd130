@@ -206,19 +206,22 @@ footer {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% auto;
   text-align: center;
 }
 
 .form {
-  grid-row-start: 2;
-  grid-row-end: span 4;
-  width: 650px;
-  margin: 0 auto;
-  padding: 1rem;
+  background-color: #eee;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  background-color: #eee;
+  margin: -6em auto 1em auto;
+  padding: 10em 23em 1em 23em;
+}
+
+.form fieldset {
+  margin: -5em -20em 0em -20em;
+  padding: 1em;
+  border: none;
 }
 
 .contact {
@@ -228,7 +231,15 @@ main {
 
 .map {
   grid-column-start: 1;
-  grid-row: 3;
+  grid-row-start: 2;
+  width: 40em;
+  margin-top: 16em;
+  margin-bottom: 1em;
+}
+
+iframe {
+  width: 30em;
+  height: 20em;
 }
 
 .customers {
@@ -237,26 +248,23 @@ main {
   grid-row: 1;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 10px; /* reduced padding */
+  padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .customers img {
-  align-items: center;
-  display: grid;
-  width: 180px;
-  height: 180px;
   object-fit: cover;
-  border-radius: 50%;
-  margin: 0 5px; /* added margin to create some space between the images */
+  width: 150px;
+  height: 150px;
 }
 
+.image1 {
+ margin-right: -10em;
+}
 
-fieldset {
-  display: grid;
-  grid-gap: .5rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+.image3 {
+  margin-left: -10em;
 }
 
 legend {
@@ -300,16 +308,75 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
-#send {
-  margin: 1rem;
+.header {
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.header h1 {
+  margin-bottom: -1em;
+}
+
+.contact ul{
+  list-style: none;
+  text-align: left;
+  margin-left: 10em;
+  margin-top: 30px;
+}
+
+ul li {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
   background-color: navy;
-  color: #fff;
-  border:none;
-  border-radius: .5rem;
-  padding: .75rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
   font-size: 1.2rem;
 }
 
-button:hover {
-  background-color: darkgreen;
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+fieldset p {
+  margin-top: -40px;
+}
+
+.radio p {
+  margin-top: -30px;
+  margin-bottom: -5px;
+}
+
+.form-container {
+  display: flex;
+  gap: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.radio {
+  margin-top: 3em;
+}
+
+.message {
+  margin-top: 3em;
+  text-align: left;
+}
+
+input[type], textarea {
+  border-color: #000;
 }
