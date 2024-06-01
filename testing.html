@@ -11,37 +11,53 @@
         <h1>Reach Our Team</h1>
         <p>We love questions and feedback - and we're always happy to help!</p>
     </header>
+    
     <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p>Boston, United States</p>
-            <p>177 Huntington Ave Ste 1703</p>
-            <p>Email: <a href="mailto:contact-us@company.com">contact-us@company.com</a></p>
-            <p>Phone: +1-617-555-0108</p>
-        </section>
-        <section>
-            <h2>Send Us a Message</h2>
-            <form>
-                <label for="name">Your name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Your email address:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="Purpose">What can we help you with?</label><br>
-                    <input type="radio" id="General" name="gender" value="General">
-                    <label for="General">General Inquiry</label><br>
-                    <input type="radio" id="Reservation" name="gender" value="Reservation">
-                    <label for="Reservation">Reservation Question</label><br>
-                    <input type="radio" id="Suggestion" name="gender" value="Suggestion">
-                    <label for="Suggestion">Website Suggestion</label><br>
-
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                <input type="checkbox" id="subscribe" name="subscribe"><br>
-                <input type="submit" value="SEND">
-
-                
-            </form>
-        </section>
+          
+          <div class="wrapper">
+            <div class="main">
+              Main content
+            </div>
+            <div class="sidebar collapsed">
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item column2">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questions</legend>
+                        <div class="column1">
+                            <label for="browser">What is your favorite internet browser?</label>
+                            <select id="browser" name="browser">
+                                <option value="Chrome">Chrome</option>
+                                <option value="Firefox">Firefox</option>
+                                <option value="Safari">Safari</option>
+                                <option value="Edge">Edge</option>
+                                <option value="Opera">Opera</option>
+                            </select>
+                        </div>
+                        <div class="column1">
+                            <label for="pet">Do you have a household pet?</label>
+                            <input type="checkbox" id="pet" name="pet">
+                        </div>
+                        <div class="column1"> 
+                            <label for="feedback">List the places you have lived:</label>
+                            <textarea id="feedback" name="feedback" rows="4" placeholder="Caloocan, Malabon, Navotas, Valenzuela" required></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit Poll</button>
+                </form>
+            </div>
+          </div>
     </main>
+
     <footer>
         <!-- Footer Content Including Social Media Icons/Links -->
     </footer>

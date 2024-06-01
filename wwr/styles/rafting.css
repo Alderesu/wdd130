@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Angkor&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --primary-color:#333333;
@@ -6,8 +7,8 @@
     --accent1-color:#A9A29C;
     --accent2-color: #28262B;
 
-    --heading-font: 'Angkor', serif;
-    --paragraph-font: 'Anek Devanagari', serif;
+    --heading-font: 'Source Sans 3';
+    --paragraph-font: 'Roboto';
 
     --nav-background-color: #333;
     --nav-link-color: #fff;
@@ -17,11 +18,13 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
+    font-weight: bolder;
     color: var(--primary-color); 
 }
 
 h2 {
-  display: inline;
+  display: inline-block;
+  margin: 10px;
 }
 	 
 p {
@@ -53,6 +56,8 @@ nav a:hover {
 }
 
 footer {
+    font-family: 'Source Sans 3';
+    font-weight: bold;
     background-color: var(--nav-background-color);
     padding: 1px;
     display: flex;
@@ -81,6 +86,8 @@ footer {
   }
 
   header {
+    font-family: 'Source Sans 3';
+    font-weight: bold;
     display: grid;
     justify-content: space-between;
     align-items: center;
@@ -171,14 +178,6 @@ footer {
     line-height: 1.4;
     color: #666;
   }
-  
-  section img {
-    display: grid;
-    margin-top: 40px;
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-  }
 
   #adventure {
     margin-top: -0px;
@@ -201,10 +200,11 @@ footer {
   figcaption {
     text-align: center;
     font-family: var(--heading-font);
+    font-weight: bold;
     color: var(--accent2-color); 
   }
 
-main {
+.maincontact {
   display: grid;
   grid-template-columns: 40% auto;
   text-align: center;
@@ -233,8 +233,8 @@ main {
   grid-column-start: 1;
   grid-row-start: 2;
   width: 40em;
-  margin-top: 16em;
-  margin-bottom: 1em;
+  margin-top: 18em;
+  margin-bottom: 2em;
 }
 
 iframe {
@@ -316,25 +316,43 @@ input[type="checkbox"] {
 }
 
 .header h1 {
-  margin-bottom: -1em;
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  font-size: 4em;
+  margin-bottom: -35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact h2 {
+  background-color: var(--nav-hover-background-color);
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .contact ul{
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: large;
   list-style: none;
-  text-align: left;
-  margin-left: 10em;
-  margin-top: 30px;
+  text-align: center;
+  margin-left: -2em;
+  color: var(--nav-hover-background-color);
 }
 
 ul li {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  
 }
 
 button[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: navy;
+  background-color: var(--nav-background-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -344,7 +362,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: var(--nav-hover-background-color);
 }
 
 fieldset p {
@@ -379,4 +397,276 @@ fieldset p {
 
 input[type], textarea {
   border-color: #000;
+}
+
+.trip-pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 25px;
+  font-family: var(--heading-font);
+}
+
+.trip-pictures img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h2 a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.article-book {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.trip-detail {
+  line-height: 2;
+  margin-top: -5px;
+  margin-bottom: 30px;
+}
+
+.trip-detail-item {
+  margin-right: 10px;
+  white-space: nowrap;
+  color: var(--nav-hover-background-color);
+}
+
+.trip-detail-label {
+  font-weight: bold;
+}
+
+.trip-detail-value {
+  white-space: normal;
+}
+
+.trip-detail-button, .book {
+  background-color: var(--nav-background-color);
+  text-decoration: none;
+  border-radius: 22px;
+  padding: 10px;
+}
+
+.trip-detail-button:hover, .book:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+.booknow {
+  height: 400px;
+  overflow: hidden;
+}
+ 
+.booknow img {
+  width: 100%;
+  height: auto;
+  margin: 15px;
+  margin-top: -1000px;
+}
+
+.booknow article {
+  position: absolute;
+  bottom: 93px;
+  left: 83px;
+  right: 53px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.booknow h1 {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  text-decoration: none;
+}
+
+.booknow h2 {
+   margin-top: -20px;
+   background-color: #28262B;
+   border-radius: 30px;
+   padding: 10px;
+}
+
+.booknow h2:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+thead {
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  font-size: 25px;
+  color: var(--accent2-color);
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  font-family: var(--paragraph-font);
+  width: 33.33%;
+  color: var(--nav-background-color);
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tdcolumn1 {
+  font-weight: bold;
+}
+
+.mainhome {
+  display: grid;
+}
+
+.home-page-photo {
+  width: 100%;
+  height: auto;
+  margin: 15px;
+}
+
+.home-page img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  
+}
+
+.home-page h1 {
+  font-family: var(--heading-font);
+  position: absolute;
+  top: 45%;
+  left: 11%;
+  transform: translate(-15%, -88%);
+  text-align: left;
+  color: white;
+  font-size: 70px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+
+.bottomh1 {
+  font-family: var(--paragraph-font);
+  position: absolute;
+  top: 70%;
+  left: 7%;
+  transform: translate(-8%, -88%);
+  text-align: left;
+  color: white;
+  font-size: 60px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+
+.home-page a {
+  position: absolute;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+  top: 77%;
+  left: 7%;
+  transform: translate(-20%, -88%);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: var(--accent2-color);
+  padding: 25px;
+  border-radius: 22px;
+}
+
+.home-page a:hover{
+  background-color: var(--nav-hover-background-color);
+}
+
+.home-page-picture-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.home-page-picture-container img {
+  width: 120%;
+  height: 200px;
+  margin-left: -30px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.home-page-picture-container h2 {
+  font-weight: bold;
+  font-family: var(--heading-font);
+  font-size: large;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.home-page-picture-button {
+  text-align: center;
+  margin: 20px 110px 20px 110px;
+  grid-row: 2;
+  font-family: var(--heading-font);
+  background-color: var(--nav-background-color);
+  text-decoration: none;
+  border-radius: 22px;
+  padding: 10px;
+}
+
+.home-page-picture-button:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+.home-page-form {
+  background-color: var(--nav-hover-link-color);
+  border-radius: 22px;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  width: 90%;
+  height: auto;
+  padding: 50px;
+ 
+}
+
+.home-page-form legend, p, fieldset {
+  font-family: var(--paragraph-font);
+  text-align: center;
+  border: none;
+}
+
+.home-page-form input[type="text"], .home-page-form [type="email"] {
+  width: 50%;
+}
+
+.home-page-form button {
+  background-color: var(--nav-background-color);
+  width: auto;
+  object-fit: cover;
+}
+
+.home-page-form button:hover {
+  background-color: var(--nav-hover-background-color);
 }
